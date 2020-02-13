@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<table style="width:100%;height:190px">
+    <tr>
+        <td style="width:100%">
+            <table>
+                <thead>
+                <tr class="cen">
+                    <th>手环编号</th>
+                    <th>手环数据</th>
+                </tr>
+                </thead>
+                <tbody id="tbodydata">
+                <tr>
+                    <td>1111</td>
+                    <td>2222</td>
+
+                </tr>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+<button onclick="refreshSerialData()">刷新数据</button>
+</body>
+<script type="text/javascript">
+    function refreshSerialData() {
+        var optionJson = [];
+        $.ajax({
+            type: "post",
+            url: "/SerialPort/getSerialData/showAll",
+            data: {},
+            async: true,
+            success: function (data) {
+                optionJson = data;
+                var str = "";
+                str+="<tr>"+
+                    "<td>"+optionJson.m+"</td>"+
+                    "<td>"+optionJson.n+"</td>"+
+                    "</tr>";
+                document.getElementById("tbodydata").innerHTML=str;
+            }
+
+        });
+    }
+</script>
+</html>

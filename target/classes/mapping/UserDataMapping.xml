@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ling.sport.mapper.UserDataMapper">
+
+    <resultMap id="BaseResultMap" type="ling.sport.entity.UserData">
+        <result column="user_id" jdbcType="VARCHAR" property="user_id" />
+        <result column="user_name" jdbcType="VARCHAR" property="user_name" />
+        <result column="user_sex" jdbcType="VARCHAR" property="user_sex" />
+        <result column="user_phone" jdbcType="VARCHAR" property="user_phone" />
+
+
+    </resultMap>
+
+    <select id="getUserByName" parameterType="String" resultType="ling.sport.entity.UserData" >
+        select * from userdata where user_name = #{user_name}
+    </select>
+
+    <select id="getUserById" parameterType="String" resultType="ling.sport.entity.UserData" >
+        select * from userdata where user_id = #{user_id}
+    </select>
+
+
+
+    <!--<insert id="addCurrentbd" parameterType="ling.sport.entity.Currentbd">
+        insert into currentbd(id,user_id,user_name,equipment_id,user_condition,cycle_num,hearbeat,watch_power,user_long,lat,totalTime,run)
+        values (#{id},#{user_id},#{user_name},#{equipment_id},#{user_condition},#{cycle_num},#{hearbeat},#{watch_power},#{user_long},#{lat},#{totalTime},#{run})
+    </insert>-->
+
+</mapper>

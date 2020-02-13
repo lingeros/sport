@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <script src="webjars/jquery/3.1.1/jquery.min.js"></script>
+    <script src="webjars/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="webjars/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>index</title>
+</head>
+<body>
+
+
+<h1>表单提交</h1>
+
+
+<!-- 表单提交用户信息,注意字段的设置,直接是*{} -->
+<form action="#" th:action="@{/add_new_admin}" th:object="${newAdmin}" method="post" id="add_new_admin_form" >
+    <div class="input-group">
+        <span class="input-group-addon" id="new_admin_name">用户名：</span>
+        <input type="text" class="form-control" th:field="*{name}" aria-describedby="new_admin_name">
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon" id="new_admin_password">密  码：</span>
+        <input type="password" class="form-control" th:field="*{admin_key}" aria-describedby="new_admin_password">
+    </div>
+
+    <div class="btn-group" role="group">
+        <button type="submit" class="btn btn-success" id="submit">Submit</button>
+        <input type="reset" class="btn btn-danger" value="Reset"/>
+    </div>
+
+
+</form>
+
+
+
+</body>
+</html>

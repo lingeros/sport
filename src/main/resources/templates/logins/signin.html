@@ -1,0 +1,171 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!--font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext"
+          rel="stylesheet">
+    <!-- title of site -->
+    <title>智能体能考核接收机</title>
+    <!-- For favicon png -->
+    <link rel="shortcut icon" type="image/icon" href="../logo/favicon.png"/>
+    <!--font-awesome.min.css-->
+    <link rel="stylesheet" href="../../css/font-awesome.min.css">
+    <!--animate.css-->
+    <link rel="stylesheet" href="../../css/animate.css">
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <!--style.css-->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!--responsive.css-->
+    <link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body>
+<!-- signin end -->
+<section class="signin">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="single-sign">
+                    <div class="sign-bg">
+                    </div><!--/.sign-bg -->
+                </div><!--/.single-sign -->
+            </div><!--/.col -->
+            <div class="col-sm-8">
+                <div class="single-sign">
+                    <div class="sign-content">
+                        <h2>登录</h2>
+                        <div class="signin-form">
+                            <div class=" ">
+                                <div class=" ">
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <label for="login_username">用户名</label>
+                                            <input type="text" class="form-control" id="login_username"
+                                                   placeholder="Username">
+                                        </div><!--/.form-group -->
+                                        <div class="form-group">
+                                            <label for="login_password">密码</label>
+                                            <input type="password" class="form-control" id="login_password"
+                                                   placeholder="Password">
+                                        </div><!--/.form-group -->
+
+                                        <div class="signin-password">
+                                            <div class="awesome-checkbox-list">
+                                                <ul class="unstyled centered">
+
+                                                    <li>
+                                                        <input class="styled-checkbox" id="login_keep_logining"
+                                                               type="checkbox" value="value2">
+                                                        <label for="login_keep_logining">保持登录</label>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="signup.html" class="text-danger">忘记用户名或密码 ?</a>
+                                                    </li>
+
+                                                </ul>
+                                            </div><!--/.awesome-checkbox-list -->
+                                        </div><!--/.signin-password -->
+                                        <div class="signin-footer">
+                                            <button type="button" class="btn signin_btn" id="submit_login"
+                                                    onclick="submitLogin()">
+                                                登录
+                                            </button>
+                                            <div class="form-group">
+                                                <label class="text-success">没有账号 ?</label>
+                                                <a href="#" class="text-success" onclick="gotoRegister()">注册</a>
+                                            </div>
+
+                                        </div><!--/.sign-content -->
+
+                                    </form><!--/form -->
+                                </div><!--/.col -->
+                            </div><!--/.row -->
+                        </div><!--/.signin-form -->
+                    </div><!--/.single-sign -->
+                </div><!--/.col -->
+            </div><!--/.row-->
+        </div><!--/.container -->
+    </div>
+</section><!--/.signin -->
+
+<!-- signin end -->
+
+<footer class="footer-copyright">
+    <div id="scroll-Top_div" class="col-md-2 col-md-offset-5">
+
+        <img src="../../images/company-logo.png" alt="东莞信大融合创新研究院">
+    </div><!--/.scroll-Top-->
+
+</footer><!--/.hm-footer-copyright-->
+<!--footer copyright  end -->
+
+<script src="../../js/jquery.js"></script>
+
+<!--bootstrap.min.js-->
+<script src="../../js/bootstrap.min.js"></script>
+
+<!-- bootsnav js -->
+<script src="../../js/bootsnav.js"></script>
+
+<!-- jquery.sticky.js -->
+<script src="../../js/jquery.sticky.js"></script>
+
+<!--Custom JS-->
+<script src="/js/custom.js"></script>
+
+</body>
+<script type="text/javascript">
+    function gotoRegister(){
+        window.location.replace("/register");
+    }
+
+    function isEmpty(obj){
+        if(typeof obj == "undefined" || obj == null || obj === ""){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    function submitLogin() {
+		var login_username = null;
+        login_username = $("#login_username").val();
+		var login_password = null;
+        login_password = $("#login_password").val();
+
+		if(isEmpty(login_username)){
+		    alert("用户名不能为空");
+		    return ;
+        }
+		if(isEmpty(login_password)){
+		    alert("密码不能为空");
+		    return;
+        }
+        //这个变量要跟后台controller中接收的变量名字要一样才行
+		var admin={};
+        admin['admin_name'] = login_username;
+        admin['admin_key'] = login_password;
+		$.ajax({
+            type:"POST",
+            contentType:"application/json",
+            url:"/check_login_admin",
+            data:JSON.stringify(admin),
+            success:function(result){
+                if(result.success){
+                    alert("登录成功");
+                    window.location.replace("/");
+                }else{
+                    alert("登录失败");
+                }
+            }
+        });
+
+    }
+
+</script>
+</html>

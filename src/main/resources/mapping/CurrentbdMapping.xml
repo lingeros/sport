@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ling.sport.mapper.CurrentbdMapper">
+
+    <resultMap id="BaseResultMap" type="ling.sport.entity.Currentbd">
+        <result column="id" jdbcType="VARCHAR" property="id" />
+        <result column="user_id" jdbcType="VARCHAR" property="user_id" />
+        <result column="user_name" jdbcType="VARCHAR" property="user_name" />
+        <result column="equipment_id" jdbcType="VARCHAR" property="equipment_id" />
+        <result column="user_condition" jdbcType="VARCHAR" property="user_condition" />
+        <result column="cycle_num" jdbcType="VARCHAR" property="cycle_num" />
+        <result column="hearbeat" jdbcType="VARCHAR" property="hearbeat" />
+        <result column="watch_power" jdbcType="VARCHAR" property="watch_power" />
+        <result column="user_long" jdbcType="VARCHAR" property="user_long" />
+        <result column="lat" jdbcType="VARCHAR" property="lat" />
+        <result column="totalTime" jdbcType="VARCHAR" property="totalTime" />
+        <result column="run" jdbcType="VARCHAR" property="run" />
+
+
+    </resultMap>
+
+    <select id="getCurrentbdById" parameterType="String" resultType="ling.sport.entity.Currentbd" >
+        select * from currentbd where id = #{id}
+    </select>
+
+    <select id="getCurrentbdByUserId" parameterType="String" resultType="ling.sport.entity.Currentbd" >
+        select * from currentbd where user_id = #{user_id}
+    </select>
+
+   <select id="getCurrentbdByUserName" parameterType="String" resultType="ling.sport.entity.Currentbd" >
+        select * from currentbd where user_name = #{user_name}
+    </select>
+
+    <select id="getCurrentbdByEquipmentId" parameterType="String" resultType="ling.sport.entity.Currentbd" >
+        select * from currentbd where equipment_id = #{equipment_id}
+    </select>
+
+    <insert id="addCurrentbd" parameterType="ling.sport.entity.Currentbd">
+        insert into currentbd(id,user_id,user_name,equipment_id,user_condition,cycle_num,hearbeat,watch_power,user_long,lat,totalTime,run)
+        values (#{id},#{user_id},#{user_name},#{equipment_id},#{user_condition},#{cycle_num},#{hearbeat},#{watch_power},#{user_long},#{lat},#{totalTime},#{run})
+    </insert>
+
+</mapper>
