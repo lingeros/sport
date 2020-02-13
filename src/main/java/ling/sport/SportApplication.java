@@ -22,8 +22,8 @@ public class SportApplication {
         } catch (Exception e1) {
             e1.printStackTrace();
         }*/
-        //LoginPanel LoginPanelSingleInstance = LoginPanel.getInstance();
-        //LoginPanelSingleInstance.login();
+        LoginPanel LoginPanelSingleInstance = LoginPanel.getInstance();
+        LoginPanelSingleInstance.login();
         SpringApplication.run(SportApplication.class, args);
 
 
