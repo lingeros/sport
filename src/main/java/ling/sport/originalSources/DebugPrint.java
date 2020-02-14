@@ -5,19 +5,24 @@ package ling.sport.originalSources;
  */
 public class DebugPrint {
 
-    public static void DPrint(String msg){
+    public static void DPrint(String msg) {
         System.out.println(msg);
     }
 
-    public static void DPrint(int msg){
+    public static void DPrint(int msg) {
         System.out.println(msg);
     }
 
-    public static void DPrint(boolean msg){
+    public static void DPrint(boolean msg) {
         System.out.println(msg);
     }
-    public static void DPrint(Exception msg){
+
+    public static void DPrint(Exception msg) {
         System.out.println(msg);
+    }
+
+    public static void DPrint(String tag, String msg) {
+        System.out.println(tag + " : " + msg);
     }
 
 }

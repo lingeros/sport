@@ -55,9 +55,6 @@ public class SerialTool {
      * @param baudrate 波特率
      * @return 串口对象
      * @throws SerialPortParameterFailure 设置串口参数失败
-     * @throws NotASerialPort 端口指向设备不是串口类型
-     * @throws NoSuchPort 没有该端口对应的串口设备
-     * @throws PortInUse 端口已被占用
      */
     public static final SerialPort openPort(String portName, int baudrate) {
 
@@ -101,12 +98,12 @@ public class SerialTool {
     
     /**
      * 关闭串口
-     * @param serialport 待关闭的串口对象
+
      */
     public static void closePort(SerialPort serialPort) {
         if (serialPort != null) {
             serialPort.close();
-            serialPort = null;
+
         }
     }
     
@@ -114,8 +111,7 @@ public class SerialTool {
      * 往串口发送数据
      * @param serialPort 串口对象
      * @param order    待发送数据
-     * @throws SendDataToSerialPortFailure 向串口发送数据失败
-     * @throws SerialPortOutputStreamCloseFailure 关闭串口对象的输出流出错
+
      */
     public static void sendToPort(SerialPort serialPort, byte[] order)  {
 
@@ -146,8 +142,7 @@ public class SerialTool {
      * 从串口读取数据
      * @param serialPort 当前已建立连接的SerialPort对象
      * @return 读取到的数据
-     * @throws ReadDataFromSerialPortFailure 从串口读取数据时出错
-     * @throws SerialPortInputStreamCloseFailure 关闭串口对象输入流出错
+
      */
     public static byte[] readFromPort(SerialPort serialPort){
 
@@ -186,7 +181,7 @@ public class SerialTool {
      * 添加监听器
      * @param port     串口对象
      * @param listener 串口监听器
-     * @throws TooManyListeners 监听类对象过多
+
      */
     public static void addListener(SerialPort port, SerialPortEventListener listener) {
 

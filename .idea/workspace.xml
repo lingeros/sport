@@ -2,334 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b29b254-e519-4e08-b895-b3f000115f04" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/RXTXcomm.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/commons-beanutils-1.8.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/commons-codec-1.9.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/commons-collections-3.2.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/commons-lang-2.5.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/commons-logging-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/commons-logging-1.1.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/datepicker.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/derby.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/derbyLocale_cs.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/derbyLocale_de_DE.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/derbyLocale_es.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/derbyLocale_fr.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/derbyLocale_hu.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/derbyLocale_it.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/derbyLocale_ja_JP.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/derbyLocale_ko_KR.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/derbyLocale_pl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/derbyLocale_pt_BR.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/derbyLocale_ru.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/derbyLocale_zh_CN.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/derbyLocale_zh_TW.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/derbyclient.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/djnativeswing-swt.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/djnativeswing.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ezmorph-1.0.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jl1.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/json-lib-2.4-jdk15.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/junit-4.11.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jxl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/log4j-1.2.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/modbus4J.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-5.1.7-bin.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/org.eclipse.swt.win32.win32.x86_64-4.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/poi-3.11-20141221.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/poi-examples-3.11-20141221.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/poi-excelant-3.11-20141221.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/poi-ooxml-3.11-20141221.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/poi-ooxml-schemas-3.11-20141221.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/poi-scratchpad-3.11-20141221.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/rxtxParallel.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/rxtxSerial.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/seroUtils.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xmlbeans-2.6.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/xmlbeans-2.6.0_2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/addEquipment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/addUser.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/bindUser.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/clearData.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/dataHandle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/doing.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/end.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/exit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/hide.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/mation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/prepare.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/set.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/star.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/start.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/ta.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/ti.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/timg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/title.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/to.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/warn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ima/warning_sound.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/SportApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/controller/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/controller/CurrentbdController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/controller/HistorybdController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/controller/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/controller/SerialPortController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/controller/UserDataController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/entity/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/entity/Article.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/entity/Currentbd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/entity/Historybd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/entity/UserData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/entity/UserForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/mapper/AdminMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/mapper/CurrentbdMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/mapper/HistorybdMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/mapper/UserDataMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/AbnormalOper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/AdminOper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/CurrentbdOper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/DatabaseInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/DebugPrint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/EquiOperater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/ExportEX.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/HistorybdOper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/LoginPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/MainPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/Resource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/SerialPortThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/SerialTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/SurperAdminOper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/countCycle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/createTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/detailPane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/map.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/map.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/music.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/userdataOperate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/warnPane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/service/AdminService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/service/CurrentbdService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/service/HistorybdService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/service/UserDataService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/service/serviceImpl/AdminServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/service/serviceImpl/CurrentbdServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/service/serviceImpl/HistorybdServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/service/serviceImpl/UserDataServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/utils/ResultInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/utils/SerialListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/utils/SerialPortParameterFailure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/utils/SerialTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/utils/TimestampUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapping/AdminMapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapping/CurrentbdMapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapping/HistorybdMapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapping/UserDataMapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/company-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/log-in.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/images/popuplogin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootsnav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-3.4.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.easing.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.sticky.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/modernizr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/logo/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/SerialData.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/logins/signin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/logins/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ling/sport/SportApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/sport.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/config/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/SportApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/controller/AdminController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/controller/CurrentbdController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/controller/HistorybdController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/controller/IndexController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/controller/LoginController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/controller/SerialPortController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/controller/UserDataController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/entity/Admin.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/entity/Article.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/entity/Currentbd.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/entity/Historybd.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/entity/UserData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/entity/UserForm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/mapper/AdminMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/mapper/CurrentbdMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/mapper/HistorybdMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/mapper/UserDataMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/AbnormalOper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/AdminOper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/CurrentbdOper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/DatabaseInformation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/DebugPrint.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/EquiOperater.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/ExportEX.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/HistorybdOper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/LoginPanel$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/LoginPanel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$10.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$11.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$12$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$12$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$12.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$13.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$14.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$15.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$16.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$17.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$18.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$19.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$20.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$21.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$22.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$23.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$24.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$25.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$26$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$26$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$26.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$27$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$27$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$27.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$28.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$29.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$30.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$31.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$32.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$33.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$34.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$35.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$36.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$37.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$38.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$39.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$40.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$41.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$42.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$43.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$7.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$8.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$9$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$9$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$9.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$MyAbstractTableModel1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$MyAbstractTableModel2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel$SerialListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/MainPanel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/Resource.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/SerialPortThread.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/SerialTool$SerialPortParameterFailure.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/SerialTool.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/SurperAdminOper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/countCycle.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/createTable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/detailPane$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/detailPane$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/detailPane$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/detailPane$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/detailPane$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/detailPane$6$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/detailPane$6$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/detailPane$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/detailPane$7.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/detailPane$MyAbstractTableModel2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/detailPane.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/map$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/map.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/music.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/userdataOperate.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/warnPane$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/warnPane$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/warnPane$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/warnPane$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/warnPane$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/warnPane$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/warnPane.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/service/AdminService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/service/CurrentbdService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/service/HistorybdService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/service/UserDataService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/service/serviceImpl/AdminServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/service/serviceImpl/CurrentbdServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/service/serviceImpl/HistorybdServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/service/serviceImpl/UserDataServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/utils/ResultInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/utils/SerialListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/utils/SerialPortParameterFailure.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/utils/SerialTool.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ling/sport/utils/TimestampUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mapping/AdminMapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mapping/CurrentbdMapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mapping/HistorybdMapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/mapping/UserDataMapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/images/company-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/images/log-in.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/images/popuplogin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/bootsnav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/jquery-3.4.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/jquery.easing.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/jquery.sticky.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/modernizr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/js/npm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/static/logo/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/SerialData.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/admin/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/logins/signin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/logins/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/ling/sport/SportApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/SerialPortListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/SerialPorts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/DebugPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/DebugPrint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/SerialTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/SerialTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/sport.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ling/sport/SportApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ling/sport/SportApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/SerialTool$SerialPortParameterFailure.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/SerialTool$SerialPortParameterFailure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/SerialTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ling/sport/originalSources/SerialTool.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -338,13 +19,98 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/main/java/ling/sport/originalSources/SerialTool.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="107">
+                    <caret line="146" column="37" selection-start-line="146" selection-start-column="25" selection-end-line="146" selection-end-column="37" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/main/java/ling/sport/originalSources/MainPanel.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="263">
+                    <caret line="2200" lean-forward="true" selection-start-line="2200" selection-end-line="2200" />
+                    <folding>
+                      <element signature="e#88736#96877#1" />
+                      <element signature="e#98031#98460#1" />
+                      <element signature="e#98466#98618#1" />
+                      <element signature="e#99478#101511#0" />
+                      <element signature="e#101517#101828#0" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ling/sport/originalSources/SerialPortListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="57" column="32" lean-forward="true" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1331#1332#0" expanded="true" />
+                <element signature="e#1356#1357#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ling/sport/originalSources/SerialPorts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="82" column="33" lean-forward="true" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#406#414#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
         <option value="lingeros" />
+        <option value="lingeros_pc@163.com" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/ling/sport/SportApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/SerialTool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/DebugPrint.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/SerialPorts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ling/sport/originalSources/SerialPortListener.java" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="92" />
@@ -360,6 +126,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -367,21 +134,56 @@
               <item name="sport" type="b2602c69:ProjectViewProjectNode" />
               <item name="sport" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="sport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sport" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sport" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sport" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sport" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sport" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sport" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sport" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sport" type="462c0819:PsiDirectoryNode" />
+              <item name="originalSources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581570059866" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581667750907" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -398,7 +200,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SerialPorts">
+    <configuration name="SerialPorts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ling.sport.originalSources.SerialPorts" />
+      <module name="sport" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ling.sport.originalSources.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SportApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="sport" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ling.sport.SportApplication" />
@@ -406,6 +221,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SerialPorts" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -417,57 +237,158 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581569775651</updated>
-      <workItem from="1581569776930" duration="283000" />
+      <workItem from="1581569776930" duration="1000000" />
+      <workItem from="1581642592329" duration="4695000" />
+      <workItem from="1581663502142" duration="4056000" />
     </task>
+    <task id="LOCAL-00001" summary="v1.00">
+      <created>1581570399990</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581570399990</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="283000" />
+    <option name="totallyTimeSpent" value="9751000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.329718" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49838188" visible="true" weight="0.19296375" />
+      <window_info id="Structure" order="1" sideWeight="0.50161815" side_tool="true" visible="true" weight="0.19296375" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49946696" weight="0.329718" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="v1.0" />
     <MESSAGE value="v1.01" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1.01" />
+    <MESSAGE value="v1.0" />
+    <MESSAGE value="v1.00" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1.00" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/LinkedBlockingQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4980">
+          <caret line="208" column="18" lean-forward="true" selection-start-line="208" selection-end-line="209" />
+          <folding>
+            <element signature="e#7388#7389#0" expanded="true" />
+            <element signature="e#7427#7428#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-523">
+          <caret line="164" column="35" selection-start-line="164" selection-start-column="34" selection-end-line="164" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/RXTXcomm.jar!/gnu/io/SerialPortEventListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/sport/originalSources/SerialTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="146" column="37" selection-start-line="146" selection-start-column="25" selection-end-line="146" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/sport/SportApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/sport/originalSources/MainPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="2200" lean-forward="true" selection-start-line="2200" selection-end-line="2200" />
+          <folding>
+            <element signature="e#88736#96877#1" />
+            <element signature="e#98031#98460#1" />
+            <element signature="e#98466#98618#1" />
+            <element signature="e#99478#101511#0" />
+            <element signature="e#101517#101828#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/sport/originalSources/SerialPorts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="82" column="33" lean-forward="true" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#406#414#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/sport/originalSources/DebugPrint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#534#535#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ling/sport/originalSources/SerialPortListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="57" column="32" lean-forward="true" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1331#1332#0" expanded="true" />
+            <element signature="e#1356#1357#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
