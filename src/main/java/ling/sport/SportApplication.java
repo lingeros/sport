@@ -1,5 +1,6 @@
 package ling.sport;
 
+import ling.sport.entity.SerialPortData;
 import ling.sport.originalSources.LoginPanel;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
@@ -22,9 +23,11 @@ public class SportApplication {
         } catch (Exception e1) {
             e1.printStackTrace();
         }*/
-        LoginPanel LoginPanelSingleInstance = LoginPanel.getInstance();
-        LoginPanelSingleInstance.login();
-        SpringApplication.run(SportApplication.class, args);
+        /*LoginPanel LoginPanelSingleInstance = LoginPanel.getInstance();
+        LoginPanelSingleInstance.login();*/
+        SerialPortData serialPortData = new SerialPortData("A12E11321.7995N23.9.2798H0B");
+        System.out.println(serialPortData.initData());
+        //SpringApplication.run(SportApplication.class, args);
 
 
 
