@@ -3,6 +3,7 @@ package ling.sport.originalSources;
 import gnu.io.SerialPort;
 import gnu.io.SerialPortEvent;
 import gnu.io.SerialPortEventListener;
+import ling.sport.entity.SerialPortData;
 
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -74,6 +75,8 @@ public class SerialPortListener implements SerialPortEventListener {
             }
             DebugPrint.DPrint(currentSerialPort.getName() +":一次读取数据结束！");
             DebugPrint.DPrint(new String(readBuffer));
+            SerialPortData serialPortData = new SerialPortData(new String(readBuffer));
+            DebugPrint.DPrint("转换成串口数据："+serialPortData.toString());
         }catch (Exception e){
             DebugPrint.DPrint(TAG ,e.toString());
         }

@@ -1,6 +1,8 @@
 package ling.sport;
 
+import gnu.io.SerialPort;
 import ling.sport.entity.SerialPortData;
+import ling.sport.originalSources.DebugPrint;
 import ling.sport.originalSources.LoginPanel;
 import ling.sport.originalSources.SerialPorts;
 import org.mybatis.spring.annotation.MapperScan;
@@ -26,9 +28,8 @@ public class SportApplication {
         }*/
         /*LoginPanel LoginPanelSingleInstance = LoginPanel.getInstance();
         LoginPanelSingleInstance.login();*/
-        SerialPorts.startThread();
-        //SpringApplication.run(SportApplication.class, args);
 
+        SerialPorts.startThreads();
 
 
     }

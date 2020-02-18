@@ -31,8 +31,10 @@ public class SerialPortData {
      * 例如：A12E11321.7995N23.9.2798H0B   表示 12设备  东经113.363325  北纬23度9分16.788秒==23.9272222   心率0
      */
     private String equitmentData;
-    private String GPSLongitudeData;
-    private String GPSLatitudeData;
+    private String GPSLongitudeData;//经度数据
+    private String GPSLongitudeType;//经度类型
+    private String GPSLatitudeData;//纬度数据
+    private String GPSLatitudeType;//纬度类型
     private String HeartRateData;
 
 
@@ -48,16 +50,34 @@ public class SerialPortData {
         } else {
             boolean isStartsWithA = tempData.startsWith("A");
             boolean isEndsWithB = tempData.endsWith("B");
-            if (!(isStartsWithA && isEndsWithB)) {
+            if (!(isStartsWithA)) {
                 return DATA_ERROE;
             } else {
                 //A12E11321.7995N23.9.2798H0B
                 String str1 = tempData.split("A")[1];//去掉A 12E11321.7995N23.9.2798H0B
-                equitmentID = Integer.decode(str1.split("E")[0]);//获得设备号id
-                String str2 = str1.split("E")[1];//获得11321.7995N23.9.2798H0B
-                String result = equitmentDataSplit(str2);
-                System.out.println(str1);
-                return result;
+                equitmentData = str1;
+                String equitmentIDStr = "0";//设备号id的字符串格式
+                String realData = "";
+                String GPSLongitudeType = "E";//经度类型 默认为东经
+                String GPSLongitudeTemp = "";//经度数据的缓存
+                if(str1 != null){
+                    equitmentIDStr = str1.substring(0,2);
+                    equitmentID = Integer.decode(equitmentIDStr);//获得设备号id
+                    realData = str1.substring(2);
+                    String result = equitmentDataSplit(realData);
+                    if(SUCCESS.equals(result)){
+                        String strTemp1 = GPSLongitudeType;
+                        String strTemp2 = GPSLongitudeData;
+                        GPSLongitudeData = GpsDataCovert(strTemp1, strTemp2);
+                        strTemp1 = GPSLatitudeType;
+                        strTemp2 = GPSLatitudeData;
+                        GPSLatitudeData = GpsDataCovert(strTemp1,strTemp2);
+                    }
+
+                }else{
+                    return DATA_ERROE;
+                }
+                return SUCCESS;
             }
         }
 
@@ -77,8 +97,17 @@ public class SerialPortData {
         if (temp == null) {
             return DATA_ERROE;
         } else if (temp.length() > 5) {//如果出现Ae0H0B 这样的数据，说明串口传输的数据是0数据，则不需要进行处理 直接返回数据错误
-            parts = temp.split("N");//如果数据为"11321.7995N23.9.2798H0B"  会分割成11321.7995 和 23.9.2798H0B两部分
-            GPSLongitudeData = parts[0];
+            if(temp.contains("N")){
+                parts = temp.split("N");//如果数据为"E11321.7995N23.9.2798H0B"  会分割成E11321.7995 和 23.9.2798H0B两部分
+                GPSLatitudeType = "N";
+            }else if(temp.contains("S")){
+                parts = temp.split("S");
+                GPSLatitudeType = "S";
+            }else{
+                return DATA_ERROE;
+            }
+            GPSLongitudeData = parts[0].substring(1);
+            GPSLongitudeType = parts[0].substring(0,1);
             GPSLatitudeData = parts[1].split("H")[0];
             HeartRateData = parts[1].split("H")[1].split("B")[0];
             return SUCCESS;
@@ -201,14 +230,7 @@ public class SerialPortData {
 
     public SerialPortData(String allData) {
         this.allData = allData;
-    }
-
-    public SerialPortData(byte dataHead, byte dataTail, byte equitmentID, String equitmentData) {
-        this.dataHead = dataHead;
-        this.dataTail = dataTail;
-        this.equitmentID = equitmentID;
-        this.equitmentData = equitmentData;
-
+        initData();
     }
 
 
@@ -294,12 +316,11 @@ public class SerialPortData {
     @Override
     public String toString() {
         return "SerialPortData{" +
-                "dataHead=" + dataHead +
-                ", dataTail=" + dataTail +
-                ", equitmentID=" + equitmentID +
-                ", equitmentData='" + equitmentData + '\'' +
+                "equitmentID=" + equitmentID +
                 ", GPSLongitudeData='" + GPSLongitudeData + '\'' +
+                ", GPSLongitudeType='" + GPSLongitudeType + '\'' +
                 ", GPSLatitudeData='" + GPSLatitudeData + '\'' +
+                ", GPSLatitudeType='" + GPSLatitudeType + '\'' +
                 ", HeartRateData='" + HeartRateData + '\'' +
                 '}';
     }

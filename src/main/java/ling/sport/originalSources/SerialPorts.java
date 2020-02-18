@@ -12,12 +12,17 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.*;
+import java.util.List;
 import java.util.concurrent.LinkedBlockingQueue;
 
 
 public class SerialPorts {
     //串口队列 用来保存所有的串口，每次使用一个就弹出一个
     private static ArrayDeque<String> serialPortQueuel = new ArrayDeque<String>();
+
+    //
+    public static Map<String,Thread> threadMap = new HashMap<>();
+    private static final String[] threadName= {"串口线程1","串口线程2","串口线程3","串口线程4"};
 
     //没有串口错误
     private static final String NOT_PORT_ERROR = "not port error";
@@ -78,28 +83,35 @@ public class SerialPorts {
     /**
      * 给外界提供一个方法用来启动4 条线程
      */
-    public static void startThread(){
+    public static void startThreads(){
         boolean result = init();
         if (result) {
             try {
                 SerialPortThread serialPortThread = new SerialPortThread();
                 SerialPortThread.serialPortThreadQueuel = serialPortQueuel;
                 Thread portThread1 = new Thread(serialPortThread);
-                portThread1.setName("串口线程1");
+                portThread1.setName(threadName[0]);
                 Thread portThread2 = new Thread(serialPortThread);
-                portThread2.setName("串口线程2");
+                portThread2.setName(threadName[1]);
                 Thread portThread3 = new Thread(serialPortThread);
-                portThread3.setName("串口线程3");
+                portThread3.setName(threadName[2]);
                 Thread portThread4 = new Thread(serialPortThread);
-                portThread4.setName("串口线程4");
+                portThread4.setName(threadName[3]);
                 portThread1.start();
-                Thread.sleep(100);//令当前线程暂停100毫秒，以避开线程冲突
+                threadMap.put(threadName[0],portThread1);
+                Thread.sleep(50);//令当前线程暂停100毫秒，以避开线程冲突
                 portThread2.start();
-                Thread.sleep(100);//令当前线程暂停100毫秒，以避开线程冲突
+                threadMap.put(threadName[1],portThread2);
+                Thread.sleep(50);//令当前线程暂停100毫秒，以避开线程冲突
                 portThread3.start();
-                Thread.sleep(100);//令当前线程暂停100毫秒，以避开线程冲突
+                threadMap.put(threadName[2],portThread3);
+                Thread.sleep(50);//令当前线程暂停100毫秒，以避开线程冲突
                 portThread4.start();
-                Thread.sleep(100);//令当前线程暂停100毫秒，以避开线程冲突
+                threadMap.put(threadName[3],portThread4);
+                Thread.sleep(50);
+                for (int i = 0; i < threadMap.size(); i++) {
+                    DebugPrint.DPrint("现在运行的线程有："+threadMap.get(threadName[i]).getName());
+                }
             } catch (Exception e) {
                 DebugPrint.DPrint(e);
             }
@@ -108,7 +120,23 @@ public class SerialPorts {
         }
     }
 
-
+    public static void closeThreads(){
+        DebugPrint.DPrint("开始关闭线程");
+        if(threadMap.size() != 0){
+            for(int i = 0;i< threadMap.size();i++){
+                Thread thread = threadMap.get(threadName[i]);
+                SerialPort serialPort = SerialPortThread.usedSerialPortMap.get(thread.getName());
+                //先关闭串口
+                if(serialPort != null){
+                    serialPort.close();
+                    DebugPrint.DPrint("串口"+ serialPort.getName()+"已释放");
+                    SerialPortThread.usedSerialPortMap.remove(thread.getName());
+                }
+                //再暂停串口所在线程
+                thread.interrupt();
+            }
+        }
+    }
 
     private static void sendData(SerialPort serialPort, byte[] order) {
         OutputStream outputStream = null;
@@ -132,9 +160,14 @@ public class SerialPorts {
 
     }
 
+    public static boolean isUsedSerialPortMapEmpty(){
+        return (SerialPortThread.usedSerialPortMap.isEmpty());
+    }
+
     static class SerialPortThread implements Runnable {
         private static ArrayDeque<String> serialPortThreadQueuel = new ArrayDeque<String>();
-
+        //用来存放当前运行的线程和与之对应的串口名
+        public static Map<String,SerialPort> usedSerialPortMap = new HashMap<>();
         @Override
         public void run() {
             DebugPrint.DPrint("new Thread start:" + Thread.currentThread().getId());
@@ -143,6 +176,7 @@ public class SerialPorts {
             String sendMsg = portName + ":message";
             if (serialPort != null) {
                 try {
+                    usedSerialPortMap.put(Thread.currentThread().getName(),serialPort);
                     DebugPrint.DPrint("open serial port is :" + portName);
                     InputStream inputStream = new BufferedInputStream(serialPort.getInputStream(), 1024);
                     OutputStream outputStream = serialPort.getOutputStream();
