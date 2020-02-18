@@ -1,23 +1,27 @@
 package ling.sport.originalSources;
 
+import gnu.io.SerialPort;
 import gnu.io.SerialPortEvent;
 import gnu.io.SerialPortEventListener;
 
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.Arrays;
 
 public class SerialPortListener implements SerialPortEventListener {
     private final String TAG = "SerialPortListener";
     //串口传进来的
     private InputStream inputStream;
     private OutputStream outputStream;
-
+    //保存当前的串口对象
+    private SerialPort currentSerialPort;
     public SerialPortListener() {
     }
 
-    public SerialPortListener(InputStream inputStream, OutputStream outputStream) {
+    public SerialPortListener(InputStream inputStream, OutputStream outputStream,SerialPort serialPort) {
         this.inputStream = inputStream;
         this.outputStream = outputStream;
+        this.currentSerialPort = serialPort;
     }
 
     @Override
@@ -53,19 +57,26 @@ public class SerialPortListener implements SerialPortEventListener {
             case SerialPortEvent.DATA_AVAILABLE:
                 DebugPrint.DPrint("串口存在可用数据");
                 //接收数据
-                try{
-                    if(inputStream.available()>0){
-                        receiveData();
-                    }
-                }catch (Exception e){
-                    DebugPrint.DPrint(TAG ,e.toString());
-                }
+                receiveData();
                 break;
         }
     }
 
     private void receiveData(){
-        DebugPrint.DPrint("接收数据");
+        byte[] readBuffer = new byte[35];
+        try{
+            int read_length = -1;
+            while(inputStream.available()>0){
+                read_length = inputStream.read(readBuffer);
+                if(read_length == -1){
+                    break;
+                }
+            }
+            DebugPrint.DPrint(currentSerialPort.getName() +":一次读取数据结束！");
+            DebugPrint.DPrint(new String(readBuffer));
+        }catch (Exception e){
+            DebugPrint.DPrint(TAG ,e.toString());
+        }
     }
 
 }
