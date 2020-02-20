@@ -4,6 +4,7 @@ import gnu.io.SerialPort;
 import gnu.io.SerialPortEvent;
 import gnu.io.SerialPortEventListener;
 import ling.sport.entity.SerialPortData;
+import ling.sport.utils.SerialPortDataList;
 
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -58,13 +59,17 @@ public class SerialPortListener implements SerialPortEventListener {
             case SerialPortEvent.DATA_AVAILABLE:
                 DebugPrint.DPrint("串口存在可用数据");
                 //接收数据
-                receiveData();
+                SerialPortData serialPortData = receiveData();
+                if(serialPortData != null){
+                    SerialPortDataList.addData(serialPortData);
+                }
                 break;
         }
     }
 
-    private void receiveData(){
+    private SerialPortData receiveData(){
         byte[] readBuffer = new byte[35];
+        SerialPortData serialPortData = null;
         try{
             int read_length = -1;
             while(inputStream.available()>0){
@@ -75,11 +80,12 @@ public class SerialPortListener implements SerialPortEventListener {
             }
             DebugPrint.DPrint(currentSerialPort.getName() +":一次读取数据结束！");
             DebugPrint.DPrint(new String(readBuffer));
-            SerialPortData serialPortData = new SerialPortData(new String(readBuffer));
+            serialPortData = new SerialPortData(new String(readBuffer));
             DebugPrint.DPrint("转换成串口数据："+serialPortData.toString());
         }catch (Exception e){
             DebugPrint.DPrint(TAG ,e.toString());
         }
+        return serialPortData;
     }
 
 }
