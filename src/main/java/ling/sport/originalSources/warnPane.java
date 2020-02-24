@@ -36,7 +36,7 @@ public class warnPane {
     private PreparedStatement ps = null;
     private ResultSet rs = null;
     private String sql;
-    private static MainPanel mainPanel = MainPanel.getInstance();
+    private static MainPanel mainPanel = new MainPanel();
     private static music s;
     DatabaseInformation d = new DatabaseInformation();
     userdataOperate up = new userdataOperate();

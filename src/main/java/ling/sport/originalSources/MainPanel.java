@@ -91,16 +91,6 @@ public class MainPanel {
     private static long startTime;
     private static String all = "";
 
-    private static MainPanel mainPanelInstance = null;
-    private MainPanel(){}
-    public static MainPanel getInstance(){
-        if(mainPanelInstance == null){
-            mainPanelInstance = new MainPanel();
-        }
-        return mainPanelInstance;
-    }
-
-
 
     private static double rad(double d) {
         return d * Math.PI / 180.0;

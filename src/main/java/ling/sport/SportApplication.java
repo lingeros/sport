@@ -1,20 +1,16 @@
 package ling.sport;
 
-import gnu.io.SerialPort;
-import ling.sport.entity.SerialPortData;
+import ling.sport.controller.AdminController;
+import ling.sport.entity.Admin;
 import ling.sport.originalSources.DebugPrint;
 import ling.sport.originalSources.LoginPanel;
-import ling.sport.originalSources.SerialPorts;
-import ling.sport.utils.SerialPortDataList;
+import ling.sport.service.AdminService;
+import ling.sport.utils.SpringUtil;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 
-import java.awt.*;
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URISyntaxException;
-import java.net.URL;
 
 @MapperScan("ling.sport.mapper")
 @SpringBootApplication
@@ -28,22 +24,18 @@ public class SportApplication {
         } catch (Exception e1) {
             e1.printStackTrace();
         }*/
-        /*LoginPanel LoginPanelSingleInstance = LoginPanel.getInstance();
-        LoginPanelSingleInstance.login();*/
+        //LoginPanel LoginPanelSingleInstance = LoginPanel.getInstance();
+        //LoginPanelSingleInstance.login();
 
-        SerialPorts.startThreads();
+        SpringApplication.run(SportApplication.class, args);
 
-        while(true){
-            SerialPortData[] serialPortData = SerialPortDataList.getData();
-            for (int i = 0; i < serialPortData.length; i++) {
-                DebugPrint.DPrint(serialPortData[i].toString());
-            }
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
+        //普通类能够直接获取数据库数据
+        /*ApplicationContext context = SpringUtil.getApplicationContext();
+        AdminService adminService = context.getBean(AdminService.class);
+        Admin admin = adminService.getAdmin("admin");
+        if(admin != null){
+            DebugPrint.DPrint(admin.toString());
+        }*/
 
     }
 

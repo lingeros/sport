@@ -13,7 +13,7 @@ import javax.swing.UIManager;
 public class LoginPanel {
     private Color nblue = new Color(56, 87, 118);
     private static AdminOper adminOper = new AdminOper();
-    private static MainPanel mainPanel = MainPanel.getInstance();
+    private static MainPanel mainPanel =new MainPanel();
     private JFrame loginFrame;
     private JPanel loginPane;
     private JLabel commandLaybel;

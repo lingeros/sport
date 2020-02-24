@@ -13,7 +13,7 @@ public class CurrentbdOper {
     void create() {
         try {
             conn = d.getconn();
-            sql = "CREATE TABLE currentbd(\r\n" +
+            sql = "CREATE TABLE if not exists currentbd(\r\n" +
                     "	id varchar(25) PRIMARY KEY ,\r\n" +
                     "	user_id varchar(16)NOT NULL,\r\n" +
                     "	user_name varchar(16),\r\n" +

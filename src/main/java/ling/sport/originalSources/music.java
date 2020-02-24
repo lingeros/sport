@@ -15,7 +15,7 @@ import javazoom.jl.player.*;
 public class music extends Thread {
     private static final Lock lock = new ReentrantLock();
     private static Condition con = lock.newCondition();
-    private static MainPanel mainPanel = MainPanel.getInstance();
+    private static MainPanel mainPanel = new MainPanel();
     private File music;
 
 
